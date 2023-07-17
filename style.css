@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: linear-gradient(120deg, #fbcff9, #bdd6f1 );
+    background-image:url("fond.jpg");
+    color: black;
+    font-family: 'Ysabeau Office', sans-serif;
+    min-height: 100vh;
+}
+
+img{
+    width: 100px;
+
+    object-fit: contain;
+}
+
+
+/* En-tête */
+
+header{
+    font-size: 1.5em;
+    margin: 0;
+
+}
+
+header, form{
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav a{
+    display: flex;
+    text-decoration: none;
+}
+
+/* Formulaire */
+
+form input, form button {
+    padding: 0.5rem;
+    font-size: 2rem;
+    border: none;
+    background: white;
+}
+
+form button {
+    color: blue;
+    background: white;
+    cursor: pointer;
+    transform: all 0.3s ease;
+
+}
+
+form button:hover{
+    background: lightgray ;
+    color: lightseagreen;
+}
+
+.todo-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.todo-list{
+    min-width: 30%;
+    list-style: none;
+}
+
+.todo {
+    margin: 0.5rem;
+    background: white;
+    color: black;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.5 ease;
+
+}
+
+.todo li{
+    flex: 1;
+}
+
+.trash-btn {
+    background-color: red;
+}
+.complete-btn {
+    background: green;
+}
+
+.completed-check {
+    background: lightgreen;
+}
+
+.trash-btn,
+.complete-btn {
+    color: black;
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.todo-item{
+    padding: 0rem 0.5rem;
+}
+
+.fa-trash,
+.fa-check {
+    pointer-events: none;
+}
+
+select{
+    -webkit-apperance: none;
+    -moz-appeareance: none;
+    appearance: none;
+    outline: none;
+    box-shadow: none;
+    border: none;
+}
+
+.select{
+    margin: 1rem;
+    overflow: hidden;
+}
+
+select {
+    width: 100%;
+    height: 55px;
+    padding: 20px;
+    border-radius: 20px;
+    color: black;
+    font-family: 'Ysabeau Office', sans-serif;
+    font-weight: bold;
+}
+
+select:hover{
+    background-color: lightgrey;
+    color: lightseagreen;
+}
+
+
+
